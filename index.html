@@ -6,7 +6,6 @@
   <title>Jeeva Bharathi R | Digital Marketing Specialist Entry-Level</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
-    /* Global Styles */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -71,31 +70,40 @@
       width: 100%;
       bottom: 0;
     }
+    .toggle {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #00bcd4;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  
-  <h1>Jeeva Bharathi R</h1>
-  <p>Digital Marketing Specialist | Creative Strategist</p>
+  <h1>Jeeva Bharathi Rajendran</h1>
+  <p>Aspiring Digital Marketing Professional</p>
 </header>
 
 <main>
-  <section>
+  <section id="about">
     <h2>About Me</h2>
-    <p>As a passionate Digital Marketing Specialist, I leverage modern tools and strategies to drive engagement, build brand presence, and optimize marketing performance. My skills combine creativity with analytical thinking to deliver impactful campaigns.</p>
+    <p id="about-text">As a passionate Digital Marketing Specialist, I leverage modern tools and strategies to drive engagement, build brand presence, and optimize marketing performance.</p>
+    <button class="toggle" onclick="toggleVisibility('about-text')">Toggle About</button>
   </section>
 
   <section>
     <h2>Skills</h2>
     <ul>
-      <li>Digital Marketing Strategies</li>
+      <li>Digital Marketing</li>
       <li>SEO & SEM</li>
       <li>Social Media Management</li>
       <li>Content Creation</li>
-      <li>Analytics and Reporting</li>
-      <li>Campaign Optimization</li>
+      <li>Research and Analytics</li>
     </ul>
   </section>
 
@@ -103,7 +111,6 @@
     <h2>Tools</h2>
     <ul>
       <li>Google Analytics</li>
-      <li>Google Ads</li>
       <li>Power BI</li>
       <li>Tableau</li>
       <li>Canva</li>
@@ -113,11 +120,8 @@
 
   <section>
     <h2>Projects</h2>
-    <h3>Social Media Growth Campaign</h3>
-    <p>Executed a targeted content strategy to increase brand awareness and follower engagement across major social media platforms, resulting in a 35% growth in audience.</p>
-
-    <h3>SEO Optimization for E-commerce Website</h3>
-    <p>Improved search engine rankings by optimizing website content, metadata, and link-building strategies, leading to a 50% increase in organic traffic.</p>
+    <h3>Hospital Management System</h3>
+    <p>Built a full-stack Hospital Management System with role-based login for patients, doctors, and admins. Developed using HTML, CSS, JavaScript, Django, MySQL, and Git.</p>
   </section>
 
   <section>
@@ -125,7 +129,8 @@
     <ul>
       <li>Google Digital Garage - Fundamentals of Digital Marketing</li>
       <li>Salesforce Marketing Cloud Certification</li>
-      <li>Learnathon - Digital Transformation Skills</li>
+      <li>Skillup(Simplilearn) - Basics of SEO</li>
+      <li>OfficeMasters - PowerBI</li>
     </ul>
   </section>
 
@@ -142,6 +147,13 @@
 <footer>
   &copy; 2025 Jeeva Bharathi R
 </footer>
+
+<script>
+  function toggleVisibility(id) {
+    const element = document.getElementById(id);
+    element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
 
 </body>
 </html>
